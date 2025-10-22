@@ -11,24 +11,25 @@
     <link rel="stylesheet preload" as=style href=css/libs.min.css>
     <link rel=stylesheet href=css/index.min.css>
     <link rel=stylesheet href=css/floatbutton.min.css>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header class=header data-page=home data-page-parent=home>
-        <div class="container d-flex text-white "> Metro Developers
+        <div class="container d-flex "> <p class="p-4 rounded-3xl border-black bg-white text-black text-xl font-bold">Metro Developers</p>
             <nav class="header_nav collapse" id=headerMenu>
                 <ul class=header_nav-list>
                     <li class="header_nav-list_item dropdown"><a class="nav-link nav-item dropdown-toggle"
                             href=index.html data-bs-toggle=collapse data-bs-target=#homeMenu data-trigger=dropdown
                             data-main-link=true aria-expanded=false aria-controls=homeMenu data-page=home
-                            data-page-parent=home><span class=nav-item_text>Home </span><span
+                            data-page-parent=home><span class=nav-item_text class="text-black">Home </span><span
                                 class="icon icon-chevron_right"></span></a>
                        
                     </li>
-                    <li class=header_nav-list_item><a class="nav-item nav-link" href="#" data-page=about
+                    <li class=header_nav-list_item><a class="nav-item nav-link" href="#about" data-page=about
                             data-single=true><span class=nav-item_text>About</span></a></li>
                     <li class="header_nav-list_item dropdown"><a class="nav-link nav-item dropdown-toggle"
-                            href=services.html data-bs-toggle=collapse data-bs-target=#servicesMenu
+                            href="#service" data-bs-toggle=collapse data-bs-target=service
                             data-trigger=dropdown data-page-parent=services data-main-link=true aria-expanded=false
                             aria-controls=servicesMenu><span class=nav-item_text>Services </span></a>
                         
@@ -36,7 +37,7 @@
                     
                     
                     <li class="header_nav-list_item dropdown"><a class="nav-link nav-item dropdown-toggle"
-                            href=contacts.html data-bs-toggle=collapse data-bs-target=#contactsMenu
+                            href="#contact" data-bs-toggle=collapse data-bs-target=contact
                             data-trigger=dropdown data-page-parent=contacts data-main-link=true aria-expanded=false
                             aria-controls=contactsMenu><span class=nav-item_text>Contacts </span><span
                                 class="icon icon-chevron_right"></span></a>
@@ -76,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="services section">
+        <section   id="service" class="services section">
             <div class=container>
                 <div class="services_header section_header"><span class=subtitle>What we do</span>
                     <h2 class=title data-aos=fade-right data-aos-duration=500>Multi-Disciplined Engineering <span
@@ -86,48 +87,42 @@
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>01</span>
                             <h4 class=title>Process Engineering</h4>
-                            <p class=description>Senectus et netus et malesuada. Nunc pulvinar sapien et ligula
-                                ullamcorper malesuada proin</p><a class="link link-arrow"
+                            <a class="link link-arrow"
                                 href=single-service.html>Details <i class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>02</span>
                             <h4 class=title>Construction Services</h4>
-                            <p class=description>Donec adipiscing tristique risus nec feugiat in. Porttitor massa id
-                                neque aliquam vestibulum morbi</p><a class="link link-arrow"
+                            <a class="link link-arrow"
                                 href=single-service.html>Details <i class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>03</span>
                             <h4 class=title>Civil Engineering</h4>
-                            <p class=description>Morbi tincidunt ornare massa eget egestas purus viverra blandit
-                                elementum cursus risus.</p><a class="link link-arrow" href=single-service.html>Details
+                            <a class="link link-arrow" href=single-service.html>Details
                                 <i class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>04</span>
                             <h4 class=title>Electrical Engineering</h4>
-                            <p class=description>Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Nam
-                                aliquam sem et tortor</p><a class="link link-arrow" href=single-service.html>Details <i
+                            <a class="link link-arrow" href=single-service.html>Details <i
                                     class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>05</span>
                             <h4 class=title>Chemistry and Metallurgy</h4>
-                            <p class=description>Mollis nunc sed id semper. Sodales ut etiam sit amet nisl purus. Sed
-                                odio morbi quis commodo odio</p><a class="link link-arrow"
+                            <a class="link link-arrow"
                                 href=single-service.html>Details <i class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
                     <li class=services_list-item data-aos=fade-up>
                         <div class=wrapper><span class=number>06</span>
                             <h4 class=title>Specialty Services</h4>
-                            <p class=description>Tellus elementum sagittis vitae et. Amet justo donec enim diam
-                                vulputate ut consequat id porta nibh venenatis</p><a class="link link-arrow"
+                            <a class="link link-arrow"
                                 href=single-service.html>Details <i class="icon-arrow_right icon"></i></a>
                         </div>
                     </li>
@@ -135,7 +130,7 @@
             </div>
         </section>
        
-        <section class="spots section">
+        <section id="about" class="spots section">
             <div class=container>
                 <div class=wrapper>
                     <div class="spots_header section_header"><span class=subtitle>Where we work</span>
@@ -144,10 +139,7 @@
                     <div class=spots_map><img src=svg/map.svg alt=Map></div>
                 </div>
                 <div class=spots_info>
-                    <p class=spots_info-text>Molestie nunc non blandit massa. Lacus sed viverra tellus in hac habitasse
-                        platea. Velit egestas dui id ornare arcu. Sapien pellentesque habitant morbi tristique senectus
-                        et netus. Ut consequat semper viverra nam libero. Convallis
-                        aenean et tortor</p>
+                   
                     <div class=wrapper>
                         <div class=spots_info-number>
                             <h2 class="countNum number" data-suffix=+ data-value=200>4</h2><span class=label>Active
@@ -184,8 +176,7 @@
                                     fill=currentColor />
                             </svg>
                             <h4 class=features_card-title>We Develop Unique Projects</h4>
-                            <p class=features_card-description>Senectus et netus et malesuada. Nunc pulvinar sapien et
-                                ligula ullamcorper malesuada proin</p>
+                            
                         </div>
                     </div>
                     <div class=features_card data-aos=fade-up data-aos-delay=50>
@@ -199,8 +190,7 @@
                                     fill=currentColor />
                             </svg>
                             <h4 class=features_card-title>We Value Convenience and Functionality</h4>
-                            <p class=features_card-description>Magnis dis parturient montes nascetur ridiculus mus
-                                mauris vitae ultricies</p>
+                           
                         </div>
                     </div>
                     <div class=features_card data-aos=fade-up data-aos-delay=100>
@@ -244,8 +234,7 @@
                                     fill=currentColor />
                             </svg>
                             <h4 class=features_card-title>Experience Allows Us to Implement Ideas</h4>
-                            <p class=features_card-description>Viverra nibh cras pulvinar mattis nunc sed blandit libero
-                                volutpat. Enim diam vulputate ut pharetra</p>
+                            
                         </div>
                     </div>
                     <div class=features_card data-aos=fade-up data-aos-delay=150>
@@ -283,8 +272,7 @@
                                     fill=currentColor />
                             </svg>
                             <h4 class=features_card-title>We Offer Innovative Technologies</h4>
-                            <p class=features_card-description>Consectetur adipiscing elit pellentesque habitant. Arcu
-                                felis bibendum ut tristique</p>
+                           
                         </div>
                     </div>
                     <div class=features_card data-aos=fade-up data-aos-delay=200>
@@ -310,8 +298,7 @@
                                     fill=currentColor />
                             </svg>
                             <h4 class=features_card-title>We Focus on Long-term Relationships</h4>
-                            <p class=features_card-description>Purus in massa tempor nec feugiat. Euismod lacinia at
-                                quis risus sed vulputate</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -335,50 +322,7 @@
                     </div><a class=video_btn href=#><i class=icon-play></i> <i class=icon-pause></i></a><video
                         class=video_content src=video/full.mp4 preload=auto></video>
                 </div>
-                <div class=content>
-                    <div class=team_main>
-                        <p class=team_main-text data-aos=fade-right data-aos-duration=300>Leo in vitae turpis massa sed
-                            elementum tempus egestas sed. Sed sed risus pretium quam vulputate dignissim suspendisse in.
-                            Placerat orci nulla pellentesque dignissim enim. Tortor pretium viverra suspendisse potenti
-                            nullam augue.
-                            Vestibulum lorem sed risus ultricies tristique nulla. Erat velit scelerisque in dictum non
-                            consectetur</p>
-                        <ul class=checklist>
-                            <li class=checklist_item data-aos=fade-up><i class="icon-check icon"></i> Ingenuity for life
-                            </li>
-                            <li class=checklist_item data-aos=fade-up data-aos-delay=50><i class="icon-check icon"></i>
-                                Lets you shine with skill</li>
-                            <li class=checklist_item data-aos=fade-up data-aos-delay=100><i class="icon-check icon"></i>
-                                Make science your obedient servant</li>
-                            <li class=checklist_item data-aos=fade-up data-aos-delay=150><i class="icon-check icon"></i>
-                                Development of Electrical Schematics</li>
-                        </ul>
-                    </div>
-                    <div class=team_quote data-aos=fade-left data-aos-duration=300><q class=main>Senectus et netus et
-                            malesuada. Nunc proin pulvinar sapien et ligula ulamcorper malesuada proin</q>
-                        <div class=secondary>
-                            <div class=author>
-                                <div class=avatar>
-                                    <picture>
-                                        <source data-srcset=img/avatars/founder.webp srcset=img/avatars/founder.webp
-                                            type=image/webp><img class=lazy data-src=img/avatars/founder.jpg
-                                            src=img/avatars/founder.jpg alt="Daniel Strickland">
-                                    </picture>
-                                </div>
-                                <div class=info><span class=info_name>Daniel Strickland</span> <span
-                                        class=info_profession>Founder of the company</span></div>
-                            </div><svg class=quote-icon width=83 height=73 viewBox="0 0 83 73" fill=none
-                                xmlns=http://www.w3.org/2000/svg>
-                                <path
-                                    d="M47 0V36.5H70.9999C70.9999 49.9171 60.2333 60.8333 47 60.8333V73C66.8516 73 83 56.6273 83 36.5V0L47 0Z"
-                                    fill=#FFC631 />
-                                <path
-                                    d="M0 36.5H23.9999C23.9999 49.9171 13.2333 60.8333 0 60.8333V73C19.8516 73 36 56.6273 36 36.5V0H0V36.5Z"
-                                    fill=#FFC631 />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </section>
         <section class="faq section-nopb">
@@ -454,15 +398,12 @@
                 <div class=contact_info>
                     <h3 class=contact_info-header>Are You Going to Implement Project?</h3>
                     <ul class=contact-info>
-                        <li class=contact-info_group><span class=name>Address</span> <span class=content>2047 Cyrus
-                                Viaduct East Jadynchester</span></li>
+                        <li class=contact-info_group><span class=name>Address</span> <span class=content>Handewadi Road, Hadapsar , Pune 411028</span></li>
                         <li class=contact-info_group><span class=name>Email</span> <span
                                 class="content d-inline-flex flex-column"><a class=link
-                                    href=mailto:example.com>info@construct.com</a> <a class=link
-                                    href=mailto:example.com>support@construct.com</a></span></li>
+                                    href=mailto:example.com>info@metrodevelopers.com</a></span></li>
                         <li class=contact-info_group><span class=name>Phone</span> <span
-                                class="content d-inline-flex flex-column"><a class=link href=tel:+13136453395>1 - 313 -
-                                    645 - 3395</a> <a class=link href=tel:+14699702609>1 - 469 - 970 - 2609</a></span>
+                                class="content d-inline-flex flex-column"> <a class=link href=tel:+14699702609>+91 95118 60624</a></span>
                         </li>
                     </ul>
                     <ul class=socials>
@@ -482,17 +423,17 @@
     <footer class="footer primary-bg">
         <div class=container>
             <div class=footer_main>
-                <div class=footer_main-block><a class=brand href=index.html><img class=brand_logo src=svg/logo.svg
-                            alt="Axial Construct"> <span class=brand_name>Axial <span
-                                class=highlight>Construct</span></span></a>
+                <div class=footer_main-block><a class=brand href=index.html> <span class=brand_name>Metro <span
+                                class=highlight>Developers</span></span></a>
                 </div>
                 <div class=footer_main-block>
                     <h4 class=footer_main-block_title>Contacts</h4>
                     <div class=group-wrapper><i class="icon-call icon"></i>
                         <div class=group><a >+91 95118 60624</a> </div>
                     </div>
+                    
                     <div class=group-wrapper><i class="icon-location icon"></i>
-                        <div class=group><span>Handewadi Road</span> <span>  </span></div>
+                        <div class=group><span>Handewadi Road</span> <span>Hadapsar, Pune 411028  </span></div>
                     </div>
                 </div>
                 <div class=footer_main-block>
